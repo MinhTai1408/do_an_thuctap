@@ -8,11 +8,11 @@ const CartItem = ({ item }) => {
   const { id, title, image, price, amount } = item;
 
   return (
-    <div className="flex gap-x-4 lg:px-6 border-b border-gray-200 w-full font-light text-gray-500">
-      <div className="w-full min-h-[130px] flex items-center gap-x-4">
+    <div className="flex gap-x-4 py-2 lg:px-6 border-b border-gray-200 w-full font-light text-gray-500">
+      <div className="w-full min-h-[150px] flex items-center gap-x-4">
         {/*image */}
         <Link to={`/product/${id}`}>
-          <img src={image} className="max-w-[70px]" alt="" />
+          <img src={image} className="max-w-[80px]" alt="" />
         </Link>
         <div className="w-full flex flex-col">
           {/* title & remove icons */}
@@ -29,7 +29,7 @@ const CartItem = ({ item }) => {
               className="text-xl cursor-pointer"
               onClick={() => removeCart(id)}
             >
-              <i className="fa-sharp fa-solid fa-trash text-red-600 hover:text-red "></i>
+              <i className="fa-sharp fa-solid fa-trash text-gray-600 hover:text-red-500 transition"></i>
             </div>
           </div>
           <div className="flex gap-x-2 h-[36px] text-sm">
@@ -38,7 +38,7 @@ const CartItem = ({ item }) => {
               {/* plus icon */}
               <div
                 onClick={() => increaseAmount(id)}
-                className="flex-1 h-full flex justify-center items-center cursor-pointe"
+                className="flex-1 h-full flex justify-center items-center cursor-pointer"
               >
                 <i className="fa-solid fa-plus"></i>
               </div>

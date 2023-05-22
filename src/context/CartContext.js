@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { createContext, useEffect, useState } from "react";
 export const CartContext = createContext();
 const CartProvider = ({ children }) => {
@@ -12,7 +13,7 @@ const CartProvider = ({ children }) => {
     }, 0);
     setTotal(total);
   });
-  //tăng biến đếm của sản phẩm trên icon cart
+  //cập nhật số lượng mặt hàng
   useEffect(() => {
     if (cart) {
       const amount = cart.reduce((accumulator, currentItem) => {
@@ -21,6 +22,7 @@ const CartProvider = ({ children }) => {
       setItemAmount(amount);
     }
   }, [cart]);
+
   //add cart
   const addToCart = (product, id) => {
     const newItem = { ...product, amount: 1 };
@@ -49,13 +51,13 @@ const CartProvider = ({ children }) => {
     setCart(newCart);
   };
 
-  // tăng sản phẩm
+  // tăng số lượng
   const increaseAmount = (id) => {
     const cartItem = cart.find((item) => item.id === id);
     addToCart(cartItem, id);
   };
 
-  //giảm sản phẩm
+  //giảm số lượng
   const decreaseAmount = (id) => {
     const cartItem = cart.find((item) => {
       return item.id === id;

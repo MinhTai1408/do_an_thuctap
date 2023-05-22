@@ -26,7 +26,7 @@ const Sidebar = () => {
           <i className="fa-sharp fa-solid fa-arrow-right"></i>
         </div>
       </div>
-      <div className="overflow-auto">
+      <div >
         {cart.map((item) => {
           return <CartItem item={item} key={item.id} />;
         })}
