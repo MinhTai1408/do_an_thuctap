@@ -34,7 +34,7 @@ const Product = ({ product }) => {
           </Link>
         </div>
         {/*category and title & price */}
-      </div>{" "}
+      </div>
       <div>
         <div className="text-gray-500 mb-1">{category}</div>
         <Link to={`/product/${id}`}>
