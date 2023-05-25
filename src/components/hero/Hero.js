@@ -1,8 +1,59 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 const Hero = () => {
   return (
     <section>
+      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+            Qúy Phái Mạnh Mẽ
+          </h1>
+          <p className="mb-8 leading-relaxed">
+            Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
+            plant cold-pressed tacos poke beard tote bag. Heirloom echo park
+            mlkshk tote bag selvage hot chicken authentic tumeric truffaut
+            hexagon try-hard chambray.
+          </p>
+          <div className="flex justify-center">
+            <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+              <Link to={`women's clothing`}>Mua ngay</Link>
+            </button>
+          </div>
+        </div>
+        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <img
+            className="object-cover object-center rounded"
+            alt=""
+            src="./img/img-home/xposter-thoi-trang-44_1623291693.jpg.pagespeed.ic.uq6ClhHGkO.webp"
+          />
+        </div>
+      </div>
+      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+          <img
+            className="object-cover object-center rounded"
+            alt=""
+            src="./img/img-home/pngtree-clothing-poster-psd-download-posterclothing-advertisementformatdesignmaterialmenssuit-customizationhigh-end-image_188675.jpg"
+          />
+        </div>
+        <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+            ABROAD TRAVEL
+          </h1>
+          <p className="mb-8 leading-relaxed">
+            Phong cách thời trang ấn tượng và thu hút dành cho các chuyến du
+            lịch quốc tế đầy cảm hứng. Những gốc chụp đỉnh cao tại sân bay quốc
+            tết TÂN SƠN NHẤT. Bạn đã khám phá chưa?
+          </p>
+          <div className="flex justify-center">
+            <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+              <Link to={`men's clothing`}>Mua ngay</Link>
+            </button>
+          </div>
+        </div>
+      </div>
       <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
@@ -18,18 +69,15 @@ const Hero = () => {
           </p>
           <div className="flex justify-center">
             <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-              Button
-            </button>
-            <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
-              Button
+              <Link to={`jewelery`}>Mua ngay</Link>
             </button>
           </div>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <img
             className="object-cover object-center rounded"
-            alt="hero"
-            src="https://dummyimage.com/720x600"
+            alt=""
+            src="./img/img-home/trang_suc.jpg"
           />
         </div>
       </div>

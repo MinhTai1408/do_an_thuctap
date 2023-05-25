@@ -47,7 +47,7 @@ const Header = () => {
               >
                 <button
                   onClick={toggleDropdown}
-                  className="text-gray-500 focus:outline-none"
+                  className="text-gray-500 focus:outline-none "
                 >
                   Menu
                 </button>
@@ -76,13 +76,19 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link className="lg:px-5 py-2 block hover:text-blue-700 font-semibold">
-                Home
+              <Link
+                to={`blog`}
+                className="lg:px-5 py-2 block hover:text-blue-700 font-semibold"
+              >
+                Blog fashion
               </Link>
             </li>
             <li>
-              <Link className="lg:px-5 py-2 block hover:text-blue-700 font-semibold">
-                Home
+              <Link
+                to={`contact`}
+                className="lg:px-5 py-2 block hover:text-blue-700 font-semibold"
+              >
+                Contact
               </Link>
             </li>
           </ul>
